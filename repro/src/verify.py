@@ -32,6 +32,7 @@ from c1_proof import verify_c1
 from c2_audit import audit_c2
 from c3_search import search_c3
 from c4_table import audit_c4
+from c5_mechanism import verify_c5
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -164,14 +165,17 @@ def main() -> int:
     c2 = audit_c2()
     c3 = search_c3()
     c4 = audit_c4(ROOT / ".openresearch/artifacts/claims/c4/table_i.csv")
+    c5 = verify_c5()
     result["C1_current"] = c1
     result["C2_current"] = c2
     result["C3_current"] = c3
     result["C4_current"] = c4
+    result["C5_current"] = c5
     result["claim_statuses"]["C1"] = c1["scientific_verdict"]
     result["claim_statuses"]["C2"] = c2["scientific_verdict"]
     result["claim_statuses"]["C3"] = c3["scientific_verdict"]
     result["claim_statuses"]["C4"] = c4["scientific_verdict"]
+    result["claim_statuses"]["C5"] = c5["scientific_verdict"]
     result["environment"] = {
         "python": platform.python_version(),
         "platform": platform.platform(),
@@ -192,6 +196,7 @@ def main() -> int:
     print(f"C2_SCIENTIFIC_VERDICT={c2['scientific_verdict']}")
     print(f"C3_SCIENTIFIC_VERDICT={c3['scientific_verdict']}")
     print(f"C4_SCIENTIFIC_VERDICT={c4['scientific_verdict']}")
+    print(f"C5_SCIENTIFIC_VERDICT={c5['scientific_verdict']}")
     cumulative_passed = (
         (not baseline_regression)
         and c1["verifier_passed"]
@@ -199,6 +204,7 @@ def main() -> int:
         and c2["route_protocol_complete"]
         and c3["verifier_passed"]
         and c4["verifier_passed"]
+        and c5["verifier_passed"]
     )
     print("CUMULATIVE_VERIFIER=PASS" if cumulative_passed else "CUMULATIVE_VERIFIER=FAIL")
     return 0 if cumulative_passed else 1

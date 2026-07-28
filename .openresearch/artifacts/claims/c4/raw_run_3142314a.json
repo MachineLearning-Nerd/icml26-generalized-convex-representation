@@ -1,0 +1,16 @@
+{
+  "run_id": "3142314a-b686-4033-baa0-d836dd9990e7",
+  "git_sha": "ac3da7c456ff00420002327bbd9fd3e5e45b349f",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "visible_cpu_allocation": 64,
+  "requested_numerical_threads": 1,
+  "verifier_runtime_seconds": 0.22033636295236647,
+  "run_duration_seconds": 42,
+  "mismatch_dimensions": [5, 10],
+  "signed_differences_per_item": {"5": "-0.001", "10": "-0.001"},
+  "tolerance_negative_control_false_positive": true,
+  "c4_scientific_verdict": "FALSIFIED",
+  "c4_confidence": "HIGH",
+  "cumulative_verifier": "PASS"
+}
