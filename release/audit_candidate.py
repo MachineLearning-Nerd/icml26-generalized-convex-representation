@@ -162,6 +162,7 @@ def main() -> int:
                 "report_figures": len(image_links),
                 "fixed_command": FIXED_COMMAND,
                 "secrets_detected": False,
+                "opened_files": sorted(set(opened)),
             },
             indent=2,
             sort_keys=True,

@@ -28,6 +28,10 @@ Corrupted normalized gap: 3/2
 Process verdict: VERIFIED
 ```
 
+The **negative control** is the corrupted larger radius. It must produce a
+satisfying countermodel with normalized gap `3/2`; a verifier that accepts
+that radius would therefore fail the contract.
+
 - [Executable verifier](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/repro/src/c1_proof.py)
 - [Claim contract](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/evidence/claims/c1/claim_contract.json)
 - [Proof certificate](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/evidence/claims/c1/proof_certificate.json)

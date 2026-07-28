@@ -33,7 +33,11 @@ current verifier is first in navigation and explicitly supersedes them.
 ## Evaluator-blind red team
 
 The final pre-publication audit record is mirrored in
-[`reports/reproduction/release_report.md`](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/reports/reproduction/release_report.md).
-It records every file opened, missing conclusion, fix, and repeated traversal.
+[`reports/reproduction/release_report.md`](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/reports/reproduction/release_report.md)
+and the complete
+[`release/red_team.md`](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/release/red_team.md).
+Round 1 failed because C1's corrupted-radius countermodel was not explicitly
+labeled as a control. The page was fixed. The audit records every file opened,
+that missing conclusion, the fix, and the required fresh Round 2 traversal.
 The published HF revision and post-publication hash verification are appended
 to the public release record only after every gate passes.
