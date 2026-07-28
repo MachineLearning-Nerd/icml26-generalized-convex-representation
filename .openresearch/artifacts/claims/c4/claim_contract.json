@@ -1,0 +1,11 @@
+{
+  "claim_id": "C4",
+  "source_version": "arXiv:2509.04477v1",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2509.04477#S7.T1",
+  "live_claim_statement": "For n up to 10, the learned mechanism's revenue matches the Straight-Jacket auction benchmark exactly.",
+  "paper_table_scope": "One buyer with independent Uniform([0,1]^n) values and n in {1,2,5,10,20}; compare mean profit per item to SJa where available.",
+  "paper_actual_wording": "For all available cases, the revenue achieved by our mechanisms is virtually identical to that of SJa.",
+  "exact_falsification_contract": "At least one n<=10 row in the source-bound table has unequal learned and benchmark decimals at the reported precision.",
+  "rounding_policy": "Parse the displayed three-decimal strings as exact decimals; do not introduce a tolerance for the word exactly.",
+  "verdict_scope": "The literal live exact-match claim, not the paper's softer virtually-identical claim."
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "b7e56a29-12b4-4efd-a688-c6746f0d4318",
+  "git_sha": "0487ce3e37a507225ff245395797191463c14d60",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "visible_cpu_allocation": 64,
+  "requested_numerical_threads": 1,
+  "verifier_runtime_seconds": 0.22817635699175298,
+  "run_duration_seconds": 37,
+  "smt_result": "sat",
+  "x_size": 2,
+  "support_size": 3,
+  "phi_matrix": [[0, -2, 0], [0, 0, 1]],
+  "first_parameter": ["0", "-2", "0"],
+  "second_parameter": ["0", "0", "1"],
+  "midpoint_parameter": ["0", "-1", "1/2"],
+  "midpoint_lost_support": 2,
+  "strict_dominator_by_row": [0, 1],
+  "identity_negative_control": "unsat",
+  "c3_scientific_verdict": "FALSIFIED",
+  "c3_confidence": "HIGH",
+  "cumulative_verifier": "PASS"
+}
