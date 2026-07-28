@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">Claim status after exact checking</title>
+  <desc id="desc">Claims one, five, and six are verified; claims three and four are falsified; claim two is blocked. Best-supported possible score is ten of twelve, versus previous live score five.</desc>
+  <rect width="1100" height="500" fill="#0b1020"/>
+  <text x="55" y="58" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="30" font-weight="700">Five claims resolved; one remains honestly blocked</text>
+  <text x="55" y="92" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="18">Machine-checkable proofs, exact counterexamples, and continuous-domain applications</text>
+  <g font-family="system-ui,sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    <rect x="55" y="130" width="150" height="96" rx="14" fill="#14532d"/><text x="130" y="171" fill="#dcfce7">C1</text><text x="130" y="202" fill="#86efac" font-size="16">VERIFIED</text>
+    <rect x="223" y="130" width="150" height="96" rx="14" fill="#78350f"/><text x="298" y="171" fill="#fffbeb">C2</text><text x="298" y="202" fill="#fcd34d" font-size="16">BLOCKED</text>
+    <rect x="391" y="130" width="150" height="96" rx="14" fill="#7f1d1d"/><text x="466" y="171" fill="#fef2f2">C3</text><text x="466" y="202" fill="#fca5a5" font-size="16">FALSIFIED</text>
+    <rect x="559" y="130" width="150" height="96" rx="14" fill="#7f1d1d"/><text x="634" y="171" fill="#fef2f2">C4</text><text x="634" y="202" fill="#fca5a5" font-size="16">FALSIFIED</text>
+    <rect x="727" y="130" width="150" height="96" rx="14" fill="#14532d"/><text x="802" y="171" fill="#dcfce7">C5</text><text x="802" y="202" fill="#86efac" font-size="16">VERIFIED</text>
+    <rect x="895" y="130" width="150" height="96" rx="14" fill="#14532d"/><text x="970" y="171" fill="#dcfce7">C6</text><text x="970" y="202" fill="#86efac" font-size="16">VERIFIED</text>
+  </g>
+  <text x="55" y="290" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="17">Previous live judge</text>
+  <rect x="270" y="268" width="710" height="28" rx="14" fill="#1e293b"/>
+  <rect x="270" y="268" width="295.8" height="28" rx="14" fill="#64748b"/>
+  <text x="1000" y="290" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">5 / 12</text>
+  <text x="55" y="354" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="17">Conservative forecast</text>
+  <rect x="270" y="332" width="710" height="28" rx="14" fill="#1e293b"/>
+  <rect x="270" y="332" width="414.2" height="28" rx="14" fill="#0ea5e9"/>
+  <rect x="684.2" y="332" width="177.5" height="28" rx="14" fill="#22c55e"/>
+  <text x="1000" y="354" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">7–10 / 12</text>
+  <text x="55" y="418" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="17">Best-supported possible</text>
+  <rect x="270" y="396" width="710" height="28" rx="14" fill="#1e293b"/>
+  <rect x="270" y="396" width="591.7" height="28" rx="14" fill="#22c55e"/>
+  <text x="1000" y="418" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">10 / 12</text>
+  <text x="55" y="468" fill="#64748b" font-family="system-ui,sans-serif" font-size="15">Forecast only — a live judge revision is required to change the score.</text>
+</svg>

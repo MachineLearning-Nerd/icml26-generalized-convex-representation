@@ -1,0 +1,27 @@
+{
+  "claim_id": "C1",
+  "source_sha256": "238da228cfbb14fed2b33b919a294042e79953d3bbae2ca8b8957ac1a716950a",
+  "source_anchors": [
+    "#S5.p3",
+    "#S5.SS1",
+    "#Thmtheorem1"
+  ],
+  "assumptions": [
+    "X and nonempty Y are compact subsets of finite-dimensional Euclidean spaces",
+    "Phi has a shared finite Lipschitz constant lambda on compact X times Y",
+    "f belongs to C^Y(X), hence f equals its Y-X biconjugate",
+    "the closure topology is the uniform norm"
+  ],
+  "quantifiers": "For every epsilon > 0 and every f in C^Y(X), there exists a finite Y_tilde subset Y and g in C^{Y_tilde}(X) with ||f-g||_infinity < epsilon.",
+  "stronger_uniform_support_statement": "For every epsilon > 0, one finite epsilon/(4*lambda)-net Y_tilde works for every f in C^Y(X).",
+  "net_radius": "epsilon/(4*lambda)",
+  "zero_lipschitz_case": "All branches are identical in y; any singleton support is exact.",
+  "proof_steps": [
+    "compact_implies_finite_net",
+    "transform_preserves_lipschitz_constant",
+    "two_lipschitz_errors_bound_branch",
+    "finite_support_is_subsupport",
+    "pointwise_bound_lifts_through_supremum",
+    "combine_one_sided_bounds"
+  ]
+}

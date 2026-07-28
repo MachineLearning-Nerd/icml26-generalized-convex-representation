@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">Continuous auction recovery</title>
+  <desc id="desc">Recovered one and two item prices match benchmarks; mixed bundling revenue exceeds pure bundle and separate selling controls.</desc>
+  <rect width="1100" height="500" fill="#fff"/>
+  <text x="55" y="55" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#0f172a">Continuous-domain recovery lands on the theoretical menu</text>
+  <text x="55" y="86" font-family="system-ui,sans-serif" font-size="17" fill="#64748b">Three seeded global searches; analytic integration plus independent midpoint quadrature</text>
+  <text x="70" y="135" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#334155">Prices</text>
+  <line x1="100" y1="405" x2="510" y2="405" stroke="#94a3b8" stroke-width="2"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="135" y="240" width="80" height="165" rx="5" fill="#0ea5e9"/><text x="175" y="228" fill="#0369a1" font-size="16">0.5000000</text><text x="175" y="435" fill="#475569" font-size="15">1 item</text>
+    <rect x="270" y="185" width="80" height="220" rx="5" fill="#22c55e"/><text x="310" y="173" fill="#15803d" font-size="16">0.6666667</text><text x="310" y="435" fill="#475569" font-size="15">singleton</text>
+    <rect x="405" y="121" width="80" height="284" rx="5" fill="#8b5cf6"/><text x="445" y="109" fill="#6d28d9" font-size="16">0.8619288</text><text x="445" y="435" fill="#475569" font-size="15">bundle</text>
+  </g>
+  <text x="605" y="135" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="#334155">Two-item revenue</text>
+  <line x1="620" y1="405" x2="1040" y2="405" stroke="#94a3b8" stroke-width="2"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="650" y="205" width="95" height="200" rx="5" fill="#94a3b8"/><text x="697" y="193" fill="#475569" font-size="16">0.5000000</text><text x="697" y="435" fill="#475569" font-size="14">separate</text>
+    <rect x="790" y="187" width="95" height="218" rx="5" fill="#f59e0b"/><text x="837" y="175" fill="#b45309" font-size="16">0.5443311</text><text x="837" y="435" fill="#475569" font-size="14">pure bundle</text>
+    <rect x="930" y="185" width="95" height="220" rx="5" fill="#22c55e"/><text x="977" y="173" fill="#15803d" font-size="16">0.5492010</text><text x="977" y="435" fill="#475569" font-size="14">mixed</text>
+  </g>
+  <text x="55" y="478" font-family="system-ui,sans-serif" font-size="14" fill="#64748b">Observed seed spread: ≤4.69×10⁻⁷ in price and 5.22×10⁻¹⁴ in revenue.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">Claim 2 boundary counterexample</title>
+  <desc id="desc">Uniform function error falls as one over n while boundary gradient error remains one.</desc>
+  <rect width="1000" height="500" fill="#fff"/>
+  <text x="60" y="55" font-family="system-ui,sans-serif" font-size="27" font-weight="700" fill="#0f172a">Uniform function convergence does not control the boundary gradient</text>
+  <text x="60" y="86" font-family="system-ui,sans-serif" font-size="17" fill="#64748b">fₙ(x)=max(0, x−(1−1/n)) on [0,1]</text>
+  <line x1="90" y1="400" x2="930" y2="400" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="90" y1="120" x2="90" y2="400" stroke="#94a3b8" stroke-width="2"/>
+  <g font-family="system-ui,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">
+    <text x="150" y="430">2</text><text x="270" y="430">4</text><text x="390" y="430">8</text><text x="510" y="430">16</text><text x="630" y="430">32</text><text x="750" y="430">64</text><text x="870" y="430">128</text>
+    <text x="510" y="470" font-size="16">n</text>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="13" fill="#64748b" text-anchor="end">
+    <text x="78" y="405">0</text><text x="78" y="335">0.25</text><text x="78" y="265">0.50</text><text x="78" y="195">0.75</text><text x="78" y="125">1.00</text>
+  </g>
+  <polyline points="150,260 270,330 390,365 510,382.5 630,391.25 750,395.6 870,397.8" fill="none" stroke="#0ea5e9" stroke-width="5"/>
+  <g fill="#0ea5e9"><circle cx="150" cy="260" r="6"/><circle cx="270" cy="330" r="6"/><circle cx="390" cy="365" r="6"/><circle cx="510" cy="382.5" r="6"/><circle cx="630" cy="391.25" r="6"/><circle cx="750" cy="395.6" r="6"/><circle cx="870" cy="397.8" r="6"/></g>
+  <polyline points="150,120 270,120 390,120 510,120 630,120 750,120 870,120" fill="none" stroke="#ef4444" stroke-width="5"/>
+  <g fill="#ef4444"><circle cx="150" cy="120" r="6"/><circle cx="270" cy="120" r="6"/><circle cx="390" cy="120" r="6"/><circle cx="510" cy="120" r="6"/><circle cx="630" cy="120" r="6"/><circle cx="750" cy="120" r="6"/><circle cx="870" cy="120" r="6"/></g>
+  <rect x="610" y="150" width="300" height="86" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <line x1="630" y1="178" x2="680" y2="178" stroke="#0ea5e9" stroke-width="5"/><text x="695" y="184" font-family="system-ui,sans-serif" font-size="15" fill="#334155">‖fₙ−f‖∞ = 1/n</text>
+  <line x1="630" y1="210" x2="680" y2="210" stroke="#ef4444" stroke-width="5"/><text x="695" y="216" font-family="system-ui,sans-serif" font-size="15" fill="#334155">gradient error at x=1 = 1</text>
+</svg>

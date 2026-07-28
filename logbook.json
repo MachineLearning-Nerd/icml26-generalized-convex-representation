@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Universal Representation of Generalized Convex Functions",
+  "emoji": "🎯",
+  "space_id": "DineshAI/63o9EmYHXt",
+  "paper": "arXiv:2509.04477",
+  "tags": [
+    "icml2026-repro",
+    "paper-63o9EmYHXt"
+  ],
+  "updated_at": "2026-07-28T06:13:22Z",
+  "root": {
+    "slug": "index",
+    "title": "Claim-by-claim reproduction",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "current",
+        "title": "Current verification",
+        "file": "pages/current/page.md",
+        "children": [
+          {
+            "slug": "claim-1",
+            "title": "C1 — function density",
+            "file": "pages/current/claim-1/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-2",
+            "title": "C2 — gradient density",
+            "file": "pages/current/claim-2/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-3",
+            "title": "C3 — lean-set convexity",
+            "file": "pages/current/claim-3/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-4",
+            "title": "C4 — Table I exact match",
+            "file": "pages/current/claim-4/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-5",
+            "title": "C5 — auction recovery",
+            "file": "pages/current/claim-5/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-6",
+            "title": "C6 — OT characterization",
+            "file": "pages/current/claim-6/page.md",
+            "children": []
+          },
+          {
+            "slug": "visibility",
+            "title": "Visibility and red-team audit",
+            "file": "pages/current/visibility/page.md",
+            "children": []
+          }
+        ]
+      },
+      {
+        "slug": "verify",
+        "title": "Historical rejected baseline",
+        "file": "pages/verify/page.md",
+        "children": []
+      },
+      {
+        "slug": "overview",
+        "title": "Historical rejected baseline overview",
+        "file": "pages/overview/page.md",
+        "children": []
+      }
+    ]
+  },
+  "revision": "release-candidate-20260728"
+}
