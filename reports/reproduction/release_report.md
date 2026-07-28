@@ -128,7 +128,9 @@ Protected judged HF revision:
 Its old file set must be a strict subset of the candidate tree. The old
 `pages/verify/page.md` and `pages/overview/page.md` remain byte-for-byte
 unchanged and are labeled **Historical rejected baseline** in current
-navigation.
+navigation. The original pre-candidate manifest accidentally omitted the last
+hexadecimal nibble from the overview-page hash; it remains preserved, and a
+corrected derivative with the full exact hash is the active subset checker.
 
 The exact text-only upload allowlist and SHA-256 manifest are generated under
 `release/` after the final candidate regression. No deletion or binary upload

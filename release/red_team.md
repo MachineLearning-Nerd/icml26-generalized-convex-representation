@@ -8,9 +8,13 @@ logs, dashboard files, unpublished branches, or prior repository knowledge.
 
 Candidate source commit:
 `afdbd8141d7c108d1b002e007a11d3afe60332df`.
-Fresh directory: `/tmp/orx-space-candidate-round1.OCoVPT`.
+The initial invocation used the fresh candidate script but inherited the
+repository cwd, so it was not accepted as a valid blind traversal. It still
+identified a real page defect: C1 exposed the corrupted radius and satisfying
+countermodel but did not explicitly call them a control. The page now labels
+the countermodel **negative control** and states its intended failure.
 
-Files opened before the failed conclusion:
+Files opened before that stopped conclusion:
 
 ```text
 README.md
@@ -28,18 +32,28 @@ pages/verify/page.md
 pages/overview/page.md
 ```
 
-Conclusion that could not be verified: the C1 control cell. The page exposed
-the corrupted radius and satisfying countermodel, but did not explicitly
-identify them as a control. The automated blind audit stopped with
-`RELEASE_AUDIT=FAIL: C1 control missing`.
+## Round 1b — valid fresh-directory preservation failure
 
-Fix: the C1 canonical page now labels the corrupted-radius countermodel
-**negative control** and explains its intended failure. The audit now emits
-the complete opened-file list, rather than only a count.
+Candidate source commit:
+`e936ee0c008772d429d6377533d16b496b3da9ea`.
+Fresh directory: `/tmp/orx-space-candidate-round2.WTuOK3`.
+The audit was rerun from inside that directory. It opened the canonical pages,
+claim artifacts, verifier sources, and report figures, then stopped at the
+historical hash check.
+
+Conclusion that could not be verified: byte identity of
+`pages/overview/page.md`. Direct hashing showed that the page *was*
+byte-identical, but the original protected manifest contained a 63-character
+hash: its final hexadecimal nibble `f` had been omitted.
+
+Fix: preserve the original manifest, add
+`judged_space_90cdeab_manifest_corrected.sha256` with the complete judged-tree
+hashes, and make the audit use that corrected derivative. No historical file
+was changed.
 
 ## Round 2 — required repeat
 
-Publication remains blocked until the fixed candidate is committed, overlaid
-onto another fresh exact judged Space checkout, and the complete traversal
-passes with no missing conclusion or visibility cell. That immutable Round 2
-record is appended here before the formal release regression.
+Publication remains blocked until the corrected candidate is committed,
+overlaid onto another fresh exact judged Space checkout, and the complete
+traversal passes with no missing conclusion or visibility cell. The immutable
+Round 2 opened-file list and result are appended here before formal regression.

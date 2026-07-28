@@ -24,8 +24,11 @@ exit on failure.
 
 Judged revision:
 `90cdeabce1e7b901ad6fe1ea8f49cebee8e8417f`.
-Its file manifest is downloadable
+Its original file manifest is downloadable
 [here](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/evidence/provenance/judged_space_90cdeab_manifest.sha256).
+That protected file truncated one nibble from the overview-page hash; the
+[corrected derivative](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/evidence/provenance/judged_space_90cdeab_manifest_corrected.sha256)
+is used for exact subset verification while the original remains unchanged.
 The old `pages/verify/page.md` and `pages/overview/page.md` are byte-for-byte
 unchanged and remain reachable under **Historical rejected baseline**. The
 current verifier is first in navigation and explicitly supersedes them.

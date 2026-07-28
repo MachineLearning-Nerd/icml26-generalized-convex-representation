@@ -110,7 +110,7 @@ def main() -> int:
     opened.extend(["reports/reproduction/report.md", "reports/reproduction/release_report.md"])
 
     historical_manifest = parse_manifest(
-        ROOT / "evidence/provenance/judged_space_90cdeab_manifest.sha256"
+        ROOT / "evidence/provenance/judged_space_90cdeab_manifest_corrected.sha256"
     )
     for old_path in historical_manifest:
         require((ROOT / old_path).exists(), f"judged file missing from candidate: {old_path}")

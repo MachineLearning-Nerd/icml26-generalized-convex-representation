@@ -36,6 +36,7 @@ evidence/claims/c6/method.md
 evidence/claims/c6/raw_run_f5de8621.json
 evidence/claims/c6/source_audit.md
 evidence/provenance/judged_space_90cdeab_manifest.sha256
+evidence/provenance/judged_space_90cdeab_manifest_corrected.sha256
 evidence/provenance/live_verdict_snapshot.json
 evidence/provenance/source_audit.md
 logbook.json
