@@ -55,7 +55,8 @@ historical baseline
 The accepted scientific branch is
 `orx/c6-symbolic-ot-duality-and-nonquadratic-twist-ma` at
 `e543df69ac0bb2b63011e572a8e6368148708e52`. The presentation/release child
-will record its final SHA after the cumulative regression.
+is `orx/evaluator-visible-release-candidate-and-cumulati`; its immutable run
+commit is recorded by the cumulative OpenResearch run and upload manifest.
 
 ## Compute and runtime
 
@@ -146,7 +147,9 @@ the additive corrected manifest, the fresh candidate at commit
 `2f18caadfd991da3369bba67c2391274cf319710` passed all six claims, all 73
 text-only paths, all 15 protected historical paths, five figures, and the
 secret scan. The complete file-open record is stored in
-`release/red_team.md`. The audit is repeated after that record is frozen.
+`release/red_team.md`. A second fresh checkout at commit
+`9fa0d00daf012b7bc80d07cb322ec7a464d4ccca` repeated the same complete pass
+after that record was frozen.
 
 ## Exact publication action
 

@@ -141,5 +141,15 @@ Result:
 ```
 
 No conclusion remained inaccessible. All visibility-matrix cells were
-complete. A final fresh-directory traversal is still required after this
-record and its hashes are committed.
+complete.
+
+## Final repeat after recording Round 2
+
+Candidate source commit:
+`9fa0d00daf012b7bc80d07cb322ec7a464d4ccca`.
+Fresh directory: `/tmp/orx-space-candidate-final-pre-run.X6ZIKV`.
+This was another fresh clone at the exact judged Space revision with only the
+candidate allowlist overlaid. The audit again returned `PASS` with the same 58
+opened files, six complete claims, 73 text files, 15 historical files, exact
+historical-page byte identity, five figures, and no detected secret pattern.
+No evidence or navigation fix was needed after the repeat.

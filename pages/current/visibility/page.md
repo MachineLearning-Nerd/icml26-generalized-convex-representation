@@ -45,6 +45,7 @@ check then exposed the historical manifest's missing hash nibble; the corrected
 derivative fixed the checker without changing history. Round 2 passed all six
 claims, 73 allowlisted text files, 15 protected historical paths, five report
 figures, and the secret scan. The audit records every file opened, both fixes,
-and the required final fresh traversal.
+and a final fresh traversal after the passing record was committed. That final
+repeat also passed with no evidence or navigation change required.
 The published HF revision and post-publication hash verification are appended
 to the public release record only after every gate passes.
