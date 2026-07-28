@@ -1,0 +1,24 @@
+{
+  "claim_id": "C6",
+  "verdict_target": "VERIFIED or FALSIFIED",
+  "source_sha256": "238da228cfbb14fed2b33b919a294042e79953d3bbae2ca8b8957ac1a716950a",
+  "source_anchors": [
+    "#S4.SS1.p11",
+    "#S4.SS1.p17",
+    "#S4.SS1.p19",
+    "#S4.SS1.p21"
+  ],
+  "statement": "An optimal Kantorovich dual pair can be represented by a Y-convex potential phi and its X-transform. Where complementary equality is differentiable, grad(phi)=grad_x(Phi); if y->grad_x(Phi) is a diffeomorphism, inversion uniquely yields the Monge map.",
+  "assumptions": [
+    "An optimal finite-valued Kantorovich dual pair exists and both expectations are defined.",
+    "Complementary-support equality is differentiable in x at the point being evaluated.",
+    "For map recovery, y->grad_x(Phi)(x,y) is a diffeomorphism onto a set containing grad(phi)(x)."
+  ],
+  "pass_criteria": [
+    "Every paper-specific order implication in the universal normalization certificate is discharged.",
+    "An independent exact-rational finite-domain checker validates feasibility, objective monotonicity, and the triple-transform identity.",
+    "Exact optimal multidimensional nonquadratic examples in dimensions 2, 4, and 8 recover their maps through the stated inverse.",
+    "A non-twist negative control fails uniqueness for the intended reason.",
+    "The cumulative verifier exits nonzero if any criterion fails."
+  ]
+}
