@@ -28,6 +28,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
 import core
+from c1_proof import verify_c1
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -155,6 +156,10 @@ def regression_passes(result: dict) -> bool:
 
 def main() -> int:
     result = historical_checks()
+    baseline_regression = regression_passes(result)
+    c1 = verify_c1(ROOT / ".openresearch/artifacts/claims/c1/proof_certificate.json")
+    result["C1_current"] = c1
+    result["claim_statuses"]["C1"] = c1["scientific_verdict"]
     result["environment"] = {
         "python": platform.python_version(),
         "platform": platform.platform(),
@@ -163,11 +168,18 @@ def main() -> int:
         "requested_threads": 1,
     }
     result["runtime_seconds"] = time.perf_counter() - START
-    result["regression_passed"] = regression_passes(result)
+    result["historical_regression_passed"] = baseline_regression
+    result["historical_expected_result"] = "FAIL"
     print(json.dumps(result, indent=2, sort_keys=True))
-    print("BASELINE_REGRESSION=PASS" if result["regression_passed"] else "BASELINE_REGRESSION=FAIL")
-    print("SCIENTIFIC_VERDICT=BLOCKED (historical toy evidence only)")
-    return 0 if result["regression_passed"] else 1
+    print(
+        "HISTORICAL_REJECTED_BASELINE=REPRODUCED"
+        if not baseline_regression
+        else "HISTORICAL_REJECTED_BASELINE=UNEXPECTED_PASS"
+    )
+    print(f"C1_SCIENTIFIC_VERDICT={c1['scientific_verdict']}")
+    cumulative_passed = (not baseline_regression) and c1["verifier_passed"]
+    print("CUMULATIVE_VERIFIER=PASS" if cumulative_passed else "CUMULATIVE_VERIFIER=FAIL")
+    return 0 if cumulative_passed else 1
 
 
 if __name__ == "__main__":
