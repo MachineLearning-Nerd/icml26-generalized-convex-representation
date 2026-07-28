@@ -138,12 +138,15 @@ is authorized.
 
 ## Evaluator-blind red team
 
-The first blind traversal starts only from candidate `README.md`,
+The blind traversal starts only from candidate `README.md`,
 `logbook.json`, and `pages/index.md`, then follows displayed links. It records
 every opened file and treats repository-only or OpenResearch-only facts as
-missing. Any missing cell triggers a navigation/content fix followed by a
-second complete traversal. The final file-open record and conclusions are
-stored in `release/red_team.md` and mirrored on the Space visibility page.
+missing. The first accepted traversal found the historical-manifest typo; after
+the additive corrected manifest, the fresh candidate at commit
+`2f18caadfd991da3369bba67c2391274cf319710` passed all six claims, all 73
+text-only paths, all 15 protected historical paths, five figures, and the
+secret scan. The complete file-open record is stored in
+`release/red_team.md`. The audit is repeated after that record is frozen.
 
 ## Exact publication action
 

@@ -53,7 +53,93 @@ was changed.
 
 ## Round 2 — required repeat
 
-Publication remains blocked until the corrected candidate is committed,
-overlaid onto another fresh exact judged Space checkout, and the complete
-traversal passes with no missing conclusion or visibility cell. The immutable
-Round 2 opened-file list and result are appended here before formal regression.
+Candidate source commit:
+`2f18caadfd991da3369bba67c2391274cf319710`.
+Fresh directory: `/tmp/orx-space-candidate-round2-valid.7Mgia0`.
+The directory began as a fresh clone checked out at the exact judged Space
+revision, then received only the declared text allowlist. The audit ran from
+inside that candidate directory.
+
+Files opened:
+
+```text
+README.md
+evidence/claims/c1/EVAL.md
+evidence/claims/c1/claim_contract.json
+evidence/claims/c1/method.md
+evidence/claims/c1/raw_run_c8bc7870.json
+evidence/claims/c1/source_audit.md
+evidence/claims/c2/EVAL.md
+evidence/claims/c2/claim_contract.json
+evidence/claims/c2/method.md
+evidence/claims/c2/raw_run_0f46ec76.json
+evidence/claims/c2/source_audit.md
+evidence/claims/c3/EVAL.md
+evidence/claims/c3/claim_contract.json
+evidence/claims/c3/method.md
+evidence/claims/c3/raw_run_b7e56a29.json
+evidence/claims/c3/source_audit.md
+evidence/claims/c4/EVAL.md
+evidence/claims/c4/claim_contract.json
+evidence/claims/c4/method.md
+evidence/claims/c4/raw_run_3142314a.json
+evidence/claims/c4/source_audit.md
+evidence/claims/c5/EVAL.md
+evidence/claims/c5/claim_contract.json
+evidence/claims/c5/method.md
+evidence/claims/c5/raw_run_c6b3d274.json
+evidence/claims/c5/source_audit.md
+evidence/claims/c6/EVAL.md
+evidence/claims/c6/claim_contract.json
+evidence/claims/c6/method.md
+evidence/claims/c6/raw_run_f5de8621.json
+evidence/claims/c6/source_audit.md
+logbook.json
+pages/current/claim-1/page.md
+pages/current/claim-2/page.md
+pages/current/claim-3/page.md
+pages/current/claim-4/page.md
+pages/current/claim-5/page.md
+pages/current/claim-6/page.md
+pages/current/page.md
+pages/current/visibility/page.md
+pages/index.md
+pages/overview/page.md
+pages/verify/page.md
+reports/reproduction/images/c2-topology.svg
+reports/reproduction/images/c4-table.svg
+reports/reproduction/images/c5-auction.svg
+reports/reproduction/images/c6-twist.svg
+reports/reproduction/images/headline-status.svg
+reports/reproduction/release_report.md
+reports/reproduction/report.md
+repro/src/c1_proof.py
+repro/src/c2_audit.py
+repro/src/c3_search.py
+repro/src/c4_table.py
+repro/src/c5_mechanism.py
+repro/src/c6_ot.py
+repro/src/core.py
+repro/src/verify.py
+```
+
+Result:
+
+```json
+{
+  "allowlisted_text_files": 73,
+  "audit": "PASS",
+  "claims_complete": 6,
+  "fixed_command": "uv run --frozen python repro/src/verify.py",
+  "historical_files_present": 15,
+  "historical_pages_byte_identical": true,
+  "logbook_pages_opened": 58,
+  "report_figures": 5,
+  "secrets_detected": false,
+  "space_id": "DineshAI/63o9EmYHXt"
+}
+```
+
+No conclusion remained inaccessible. All visibility-matrix cells were
+complete. A final fresh-directory traversal is still required after this
+record and its hashes are committed.

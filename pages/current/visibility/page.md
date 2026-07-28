@@ -40,7 +40,11 @@ The final pre-publication audit record is mirrored in
 and the complete
 [`release/red_team.md`](https://huggingface.co/spaces/DineshAI/63o9EmYHXt/resolve/main/release/red_team.md).
 Round 1 failed because C1's corrupted-radius countermodel was not explicitly
-labeled as a control. The page was fixed. The audit records every file opened,
-that missing conclusion, the fix, and the required fresh Round 2 traversal.
+labeled as a control. The page was fixed. A valid fresh-directory preservation
+check then exposed the historical manifest's missing hash nibble; the corrected
+derivative fixed the checker without changing history. Round 2 passed all six
+claims, 73 allowlisted text files, 15 protected historical paths, five report
+figures, and the secret scan. The audit records every file opened, both fixes,
+and the required final fresh traversal.
 The published HF revision and post-publication hash verification are appended
 to the public release record only after every gate passes.
