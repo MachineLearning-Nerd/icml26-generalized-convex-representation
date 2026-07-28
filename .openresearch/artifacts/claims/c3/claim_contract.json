@@ -1,0 +1,17 @@
+{
+  "claim_id": "C3",
+  "source_version": "arXiv:2509.04477v1",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2509.04477#Thmtheorem4",
+  "statement": "The lean parameter subset for a fixed finite Y_tilde is a convex set.",
+  "assumptions": [
+    "X and Y are compact subsets of Euclidean spaces",
+    "Y_tilde is finite",
+    "Phi is locally Lipschitz",
+    "the X-transform supremum is attained",
+    "a parameter is lean when every support branch attains the finite maximum at some x"
+  ],
+  "quantifiers": "For every fixed admissible X, finite Y_tilde, and Phi, for every two lean parameter vectors and every lambda in [0,1], their convex combination is lean.",
+  "falsification_gate": "One exact instance satisfying all assumptions, with two independently checked lean endpoints and a strictly nonlean convex combination.",
+  "baseline_evidence_class": "random 1D quadratic proxy",
+  "baseline_verdict": "BLOCKED"
+}
