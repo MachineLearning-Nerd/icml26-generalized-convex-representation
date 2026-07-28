@@ -29,6 +29,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 import core
 from c1_proof import verify_c1
+from c2_audit import audit_c2
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -158,8 +159,11 @@ def main() -> int:
     result = historical_checks()
     baseline_regression = regression_passes(result)
     c1 = verify_c1(ROOT / ".openresearch/artifacts/claims/c1/proof_certificate.json")
+    c2 = audit_c2()
     result["C1_current"] = c1
+    result["C2_current"] = c2
     result["claim_statuses"]["C1"] = c1["scientific_verdict"]
+    result["claim_statuses"]["C2"] = c2["scientific_verdict"]
     result["environment"] = {
         "python": platform.python_version(),
         "platform": platform.platform(),
@@ -177,7 +181,13 @@ def main() -> int:
         else "HISTORICAL_REJECTED_BASELINE=UNEXPECTED_PASS"
     )
     print(f"C1_SCIENTIFIC_VERDICT={c1['scientific_verdict']}")
-    cumulative_passed = (not baseline_regression) and c1["verifier_passed"]
+    print(f"C2_SCIENTIFIC_VERDICT={c2['scientific_verdict']}")
+    cumulative_passed = (
+        (not baseline_regression)
+        and c1["verifier_passed"]
+        and c2["audit_verifier_passed"]
+        and c2["route_protocol_complete"]
+    )
     print("CUMULATIVE_VERIFIER=PASS" if cumulative_passed else "CUMULATIVE_VERIFIER=FAIL")
     return 0 if cumulative_passed else 1
 

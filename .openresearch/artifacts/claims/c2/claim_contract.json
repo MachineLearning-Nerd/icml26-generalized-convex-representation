@@ -1,0 +1,16 @@
+{
+  "claim_id": "C2",
+  "source_version": "arXiv:2509.04477v1",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2509.04477#Thmtheorem2",
+  "statement": "If Phi is semiconvex, closure(gradient FC^Y(X)) equals gradient C^Y(X).",
+  "assumptions": [
+    "X and Y retain the compact Euclidean-domain assumptions of Section V",
+    "Phi is locally Lipschitz and semiconvex in x with one shared constant K",
+    "the paper describes the gradient convergence topology only as uniform where gradients exist"
+  ],
+  "quantifiers": "For every gradient of a Y-convex function and every positive uniform-gradient tolerance, a gradient of a finitely Y-convex function must exist within that tolerance, subject to whatever common differentiability domain the phrase where gradients exist denotes.",
+  "material_ambiguity": "The theorem does not define a common function space for partial gradients, and it omits the open-domain, C1, and compact-interior conditions in the primary result invoked by its proof.",
+  "full_credit_gate": "A corrected exact topology and proof certificate, or a valid assumption-satisfying counterexample to a precise stated topology.",
+  "verdict": "BLOCKED",
+  "confidence": "LOW"
+}
