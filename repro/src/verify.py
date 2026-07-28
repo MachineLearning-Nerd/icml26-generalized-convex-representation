@@ -14,6 +14,16 @@ import sys
 import time
 from pathlib import Path
 
+# The command is fixed across nodes, so enforce the one-core baseline contract
+# in code before importing numerical libraries.
+for variable in (
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+):
+    os.environ[variable] = "1"
+
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))

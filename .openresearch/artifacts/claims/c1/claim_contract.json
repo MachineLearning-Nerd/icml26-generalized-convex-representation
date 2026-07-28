@@ -1,0 +1,15 @@
+{
+  "claim_id": "C1",
+  "source_version": "arXiv:2509.04477v1",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2509.04477#Thmtheorem1",
+  "statement": "The finitely Y-convex functions are dense in the space of Y-convex functions: closure(FC^Y(X)) = C^Y(X).",
+  "assumptions": [
+    "X and Y are compact subsets of Euclidean spaces",
+    "the surplus kernel Phi is uniformly Lipschitz on X x Y",
+    "the closure is taken in the uniform norm"
+  ],
+  "quantifiers": "For every epsilon > 0 and every f in C^Y(X), there is a finite Y~ subset Y and g in C^{Y~}(X) with ||f-g||_infinity < epsilon.",
+  "full_credit_gate": "A machine-checkable proof certificate, independently reconstructed symbolic derivation covering the exact quantifiers, exhaustive complete-domain check when the domain is finite, or an assumption-satisfying counterexample.",
+  "baseline_evidence_class": "toy finite-grid corroboration",
+  "baseline_verdict": "BLOCKED"
+}
