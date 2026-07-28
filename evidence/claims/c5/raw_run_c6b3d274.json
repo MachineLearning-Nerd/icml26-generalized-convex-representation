@@ -1,0 +1,90 @@
+{
+  "run_id": "c6b3d274-f852-4f76-b4ca-dda0de74d5bc",
+  "experiment_id": "e0c881c7-d82c-4947-8b74-3a59b36d2ada",
+  "git_sha": "6fc688ddf199b5491a9bdac2c1ce63eb2f4604a7",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "fixed_command": "uv run --frozen python repro/src/verify.py",
+  "job_duration_seconds": 26,
+  "verifier_runtime_seconds": 0.46819968381896615,
+  "estimated_numerical_cores": 1,
+  "actual_visible_cpu_allocation": 64,
+  "requested_numerical_threads": 1,
+  "result": {
+    "claim_id": "C5",
+    "scientific_verdict": "VERIFIED",
+    "confidence": "MEDIUM",
+    "one_item": {
+      "benchmark_price": 0.5,
+      "benchmark_revenue": 0.25,
+      "recovered_price": 0.5,
+      "recovered_revenue": 0.25,
+      "passed": true
+    },
+    "two_item": {
+      "benchmark": {
+        "single_price": 0.6666666666666666,
+        "bundle_price": 0.8619288125423017,
+        "total_revenue": 0.5492010046202292,
+        "paper_rounded_total_revenue": 0.549
+      },
+      "optimization_runs": [
+        {
+          "seed": 20250905,
+          "single_price": 0.6666668170498945,
+          "bundle_price": 0.8619287043407244,
+          "revenue": 0.5492010046202077,
+          "objective_evaluations": 1603,
+          "optimizer_success": true
+        },
+        {
+          "seed": 20250906,
+          "single_price": 0.6666667467628523,
+          "bundle_price": 0.8619286748032964,
+          "revenue": 0.549201004620212,
+          "objective_evaluations": 1483,
+          "optimizer_success": true
+        },
+        {
+          "seed": 20250907,
+          "single_price": 0.6666663487326442,
+          "bundle_price": 0.8619289322919682,
+          "revenue": 0.5492010046201599,
+          "objective_evaluations": 1483,
+          "optimizer_success": true
+        }
+      ],
+      "uncertainty": {
+        "single_price_seed_spread": 4.683172503128219e-7,
+        "bundle_price_seed_spread": 2.574886718287317e-7,
+        "revenue_seed_spread": 5.218048215738236e-14
+      },
+      "independent_midpoint_quadrature": [
+        {
+          "side": 200,
+          "cells": 40000,
+          "integrated_revenue": 0.5494385516290549
+        },
+        {
+          "side": 400,
+          "cells": 160000,
+          "integrated_revenue": 0.5492949346474081
+        },
+        {
+          "side": 800,
+          "cells": 640000,
+          "integrated_revenue": 0.5493653963746771
+        }
+      ],
+      "passed": true
+    },
+    "negative_controls": {
+      "separate_selling_revenue": 0.5,
+      "pure_bundle_optimal_price": 0.816496580927726,
+      "pure_bundle_revenue": 0.5443310539518175,
+      "mixed_revenue_exceeds_each_by_over_0_003": true
+    },
+    "verifier_passed": true
+  },
+  "cumulative_verifier": "PASS"
+}

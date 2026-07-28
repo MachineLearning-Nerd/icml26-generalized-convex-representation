@@ -1,0 +1,41 @@
+{
+  "claim_id": "C2",
+  "source_sha256": "238da228cfbb14fed2b33b919a294042e79953d3bbae2ca8b8957ac1a716950a",
+  "routes": [
+    {
+      "route": 1,
+      "name": "primary-source topology audit",
+      "paper_scope": "compact X; uniform function convergence; uniform gradients where they exist",
+      "cited_scope": "open convex domain; C1 functions; pointwise functions; uniform gradients only on compact interior subsets",
+      "resolved_exact_theorem": false
+    },
+    {
+      "route": 2,
+      "name": "exact counterexample to Proposition 3",
+      "sequence": "f_n(x)=max(0,x-(1-1/n)); f(x)=0 on [0,1]",
+      "shared_semiconvex_constant": 0,
+      "raw_csv": "proposition_counterexample.csv",
+      "why_not_theorem_falsification": "The target f=0 is itself finitely Y-convex."
+    },
+    {
+      "route": 3,
+      "name": "corrected smooth interior construction",
+      "target": "f(x)=x^2/2",
+      "raw_csv": "corrected_interior_route.csv",
+      "why_not_exact_theorem": "Adds differentiability and compact-interior assumptions."
+    },
+    {
+      "route": 4,
+      "name": "mandatory theorem-level falsification attempt",
+      "candidate": "route 2 boundary sequence",
+      "valid_counterexample_found": false,
+      "invalid_existential_inference_rejected": true
+    }
+  ],
+  "controls": {
+    "convergent_smooth_sequence": "h_n=x^2/(2n), gradient error=1/n",
+    "fixed_support_corruption": "three supports, nonvanishing gradient bound=1/4"
+  },
+  "scientific_verdict": "BLOCKED",
+  "confidence": "LOW"
+}

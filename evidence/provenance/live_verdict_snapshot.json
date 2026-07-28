@@ -1,0 +1,19 @@
+{
+  "dataset": "ICML-2026-agent-repro/verdicts",
+  "dataset_revision": "4c5b49569578a1052b1d0b0c4bb3358ab81fdbbd",
+  "retrieved_at": "2026-07-28T04:50:54Z",
+  "download_sha256": "e899789fcde0a2c2f8b7bb918cbbdb3a12a521b87f69ab854c63e6e73aedc7a3",
+  "filter": {
+    "space_id": "DineshAI/63o9EmYHXt"
+  },
+  "record": {
+    "judged_at": "2026-07-27T16:31:33+00:00",
+    "model": "zai-org/GLM-5.2",
+    "orid": "63o9EmYHXt",
+    "overall": "The logbook provides numerical sanity checks of the paper's theoretical results on 1D, small-grid, simple-quadratic proxy setups, and defers the only large-scale experimental claim (multi-item auctions, Table I). No claim is verified at the paper's real scale or generality; all addressed claims are toy-level demonstrations.",
+    "paper_title": "Universal Representation of Generalized Convex Functions and their Gradients",
+    "quality": "low",
+    "sha": "90cdeabce1e7b901ad6fe1ea8f49cebee8e8417f",
+    "space_id": "DineshAI/63o9EmYHXt"
+  }
+}

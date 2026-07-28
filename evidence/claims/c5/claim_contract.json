@@ -1,0 +1,18 @@
+{
+  "claim_id": "C5",
+  "source_version": "arXiv:2509.04477v1",
+  "source_anchors": [
+    "https://ar5iv.labs.arxiv.org/html/2509.04477#S7.F2",
+    "https://ar5iv.labs.arxiv.org/html/2509.04477#S7.F3"
+  ],
+  "statement": "The learned finite generalized-convex parametrization recovers the one-item posted price 0.5 and a two-item mixed-bundling menu matching the theoretical benchmark.",
+  "assumptions": [
+    "one additive buyer",
+    "independent Uniform([0,1]^n) values",
+    "linear surplus",
+    "zero production cost",
+    "the two-item symmetric deterministic menu includes no-sale, each singleton, and the bundle"
+  ],
+  "quantifiers": "For n=1 recover price 1/2 and revenue 1/4. For n=2 recover singleton price 2/3, bundle price (4-sqrt(2))/3, and the corresponding continuous-domain expected revenue.",
+  "full_credit_gate": "Optimize the full continuous objective in the finite generalized-convex menu, independently integrate the result, and show pure-separate and pure-bundle controls underperform."
+}

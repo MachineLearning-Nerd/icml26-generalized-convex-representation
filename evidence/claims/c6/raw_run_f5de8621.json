@@ -1,0 +1,60 @@
+{
+  "run_id": "f5de8621-8cda-441e-a001-20a5a4c6cd17",
+  "experiment_id": "e011008f-5054-45a5-9b02-fbbe8153d41f",
+  "git_sha": "e543df69ac0bb2b63011e572a8e6368148708e52",
+  "backend": "hf",
+  "flavor": "cpu-upgrade",
+  "fixed_command": "uv run --frozen python repro/src/verify.py",
+  "job_duration_seconds": 32,
+  "verifier_runtime_seconds": 0.6691024389583617,
+  "estimated_numerical_cores": 1,
+  "actual_visible_cpu_allocation": 64,
+  "requested_numerical_threads": 1,
+  "symbolic_schemas_proved": 5,
+  "symbolic_schemas_total": 5,
+  "independent_exact_fraction_cases": 112,
+  "independent_exact_fraction_cases_passing": 112,
+  "infimum_corruption_feasibility_failures": 112,
+  "multidimensional_nonquadratic_cases": [
+    {
+      "dimension": 2,
+      "exact_primal_dual_value": "10757/15360",
+      "root_finder_inverse_max_error": 3.1086244689504383e-15,
+      "complementary_slack_max_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "dimension": 4,
+      "exact_primal_dual_value": "52233/40960",
+      "root_finder_inverse_max_error": 2.7755575615628914e-15,
+      "complementary_slack_max_error": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "dimension": 8,
+      "exact_primal_dual_value": "477943/196608",
+      "root_finder_inverse_max_error": 3.1086244689504383e-15,
+      "complementary_slack_max_error": 8.881784197001252e-16,
+      "passed": true
+    }
+  ],
+  "non_twist_negative_control": {
+    "surplus": "Phi_bad(x,y)=x*y^2",
+    "destinations": ["-1/2", "1/2"],
+    "shared_gradient": "1/4",
+    "principal_inverse_error": "1",
+    "map_uniqueness_fails_as_intended": true
+  },
+  "c6_scientific_verdict": "VERIFIED",
+  "c6_confidence": "HIGH",
+  "claim_statuses": {
+    "C1": "VERIFIED",
+    "C2": "BLOCKED",
+    "C3": "FALSIFIED",
+    "C4": "FALSIFIED",
+    "C5": "VERIFIED",
+    "C6": "VERIFIED"
+  },
+  "historical_rejected_baseline_reproduced": true,
+  "cumulative_verifier": "PASS"
+}
