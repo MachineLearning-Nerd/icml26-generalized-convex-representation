@@ -53,9 +53,9 @@ historical baseline
 ```
 
 The accepted scientific branch is
-`orx/c6-symbolic-ot-duality-and-nonquadratic-twist-ma` at
+`audit/c6-ot-duality` at
 `e543df69ac0bb2b63011e572a8e6368148708e52`. The presentation/release child
-is `orx/evaluator-visible-release-candidate-and-cumulati`; its immutable run
+is `release/evaluator-candidate`; its immutable run
 commit is recorded by the cumulative OpenResearch run and upload manifest.
 
 ## Compute and runtime
