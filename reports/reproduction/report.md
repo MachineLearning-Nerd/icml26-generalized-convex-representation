@@ -166,9 +166,9 @@ The previous live score is 5/12. A conservative post-publication forecast is
 only a new live judge verdict can change the score.
 
 Experiment lineage:
-[C1 proof](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c1-compact-cover-proof-certificate),
-[C2 audit](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c2-topology-audit-and-falsification-routes),
-[C3 counterexample](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c3-lean-set-exact-counterexample-search),
-[C4 table audit](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c4-table-i-exact-match-source-audit),
-[C5 auctions](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c5-continuous-one-two-item-mechanism-recovery), and
-[C6 OT](https://github.com/MachineLearning-Nerd/icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients/tree/orx/c6-symbolic-ot-duality-and-nonquadratic-twist-ma).
+[C1 proof](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c1-compact-cover),
+[C2 audit](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c2-gradient-topology),
+[C3 counterexample](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c3-lean-set),
+[C4 table audit](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c4-table-exact-match),
+[C5 auctions](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c5-auction-recovery), and
+[C6 OT](https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation/tree/audit/c6-ot-duality).
