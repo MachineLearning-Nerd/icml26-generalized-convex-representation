@@ -1,0 +1,138 @@
+{
+  "paper": {
+    "title": "Universal Representation of Generalized Convex Functions and their Gradients",
+    "arxiv": "2509.04477",
+    "authors": [
+      "Moeen Nehzati"
+    ]
+  },
+  "overall_status": "PARTIAL_C1_C5_C6_VERIFIED_C2_BLOCKED_C3_C4_FALSIFIED_HISTORICAL_SCORE_5_OF_12_NO_CURRENT_SCORE",
+  "current_score_claim": false,
+  "author_endorsement_claimed": false,
+  "historical_evaluation": {
+    "space": "DineshAI/63o9EmYHXt",
+    "score": "5/12",
+    "is_current": false
+  },
+  "evidence_forecast": {
+    "range": "7-10/12",
+    "best_supported_points": 10,
+    "is_live_judge_result": false
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "paper_claim": "Finite-support generalized-convex functions are uniformly dense.",
+      "status": "VERIFIED_SCOPED",
+      "possible_points": 2,
+      "source_anchor": "Function-density theorem and compact-net construction",
+      "production_path": [
+        "repro/src/c1_proof.py reconstructs the compact finite-cover argument",
+        "Z3 checks the local bound and an independent checker evaluates 867 rational assignments",
+        "evidence/claims/c1/proof_certificate.json records assumptions and quantifiers",
+        "The corrupted-radius negative control produces a countermodel"
+      ],
+      "evidence": [
+        "evidence/claims/c1/proof_certificate.json",
+        "evidence/claims/c1/raw_run_c8bc7870.json",
+        "repro/src/c1_proof.py"
+      ],
+      "boundary": "Registered compact finite-dimensional assumptions and uniform-norm closure."
+    },
+    {
+      "id": "C2",
+      "paper_claim": "Finite-support gradients are dense in gradients of generalized-convex functions.",
+      "status": "BLOCKED",
+      "possible_points": 0,
+      "source_anchor": "Gradient-density theorem and supporting topology proposition",
+      "production_path": [
+        "repro/src/c2_audit.py runs source-topology, boundary, corrected-interior, and theorem-level routes",
+        "The supporting proposition counterexample is verified",
+        "No valid theorem-level counterexample to the existential density claim is found",
+        "evidence/claims/c2/raw_run_0f46ec76.json records the unresolved boundary"
+      ],
+      "evidence": [
+        "evidence/claims/c2/raw_run_0f46ec76.json",
+        "evidence/claims/c2/routes.json",
+        "repro/src/c2_audit.py"
+      ],
+      "boundary": "Needs a valid gradient topology and clarified theorem scope."
+    },
+    {
+      "id": "C3",
+      "paper_claim": "The lean finite parameter set is convex.",
+      "status": "FALSIFIED_SCOPED",
+      "possible_points": 2,
+      "source_anchor": "Lean finite parameter-set convexity statement",
+      "production_path": [
+        "repro/src/c3_search.py performs exact rational/SMT search",
+        "The endpoints are lean but their midpoint [0,-1,1/2] loses support",
+        "The identity negative control is unsat",
+        "evidence/claims/c3/raw_run_b7e56a29.json records the counterexample"
+      ],
+      "evidence": [
+        "evidence/claims/c3/raw_run_b7e56a29.json",
+        "evidence/claims/c3/claim_contract.json",
+        "repro/src/c3_search.py"
+      ],
+      "boundary": "Falsifies the stated compact finite scope; it does not address a narrower unstated definition."
+    },
+    {
+      "id": "C4",
+      "paper_claim": "Table I values match exactly through n=10.",
+      "status": "FALSIFIED_SCOPED",
+      "possible_points": 2,
+      "source_anchor": "Table I exact-match wording",
+      "production_path": [
+        "repro/src/c4_table.py compares decimal values and integer thousandths",
+        "An independent exact checker finds differences of -0.001 at n=5 and n=10",
+        "The tolerance negative control shows that 0.001 tolerance removes the mismatch",
+        "evidence/claims/c4/raw_run_3142314a.json records the exact dimensions"
+      ],
+      "evidence": [
+        "evidence/claims/c4/raw_run_3142314a.json",
+        "evidence/claims/c4/table_i.csv",
+        "repro/src/c4_table.py"
+      ],
+      "boundary": "Literal exact-match claim only; the softer phrase virtually identical is not falsified."
+    },
+    {
+      "id": "C5",
+      "paper_claim": "The parameterization recovers one- and two-item auction mechanisms.",
+      "status": "VERIFIED_SCOPED",
+      "possible_points": 2,
+      "source_anchor": "Auction application",
+      "production_path": [
+        "repro/src/c5_mechanism.py integrates continuous one- and two-item objectives",
+        "Three seeded global searches recover the benchmark prices and revenue",
+        "Independent midpoint quadrature checks the two-item revenue",
+        "evidence/claims/c5/raw_run_c6b3d274.json records optimizer and control results"
+      ],
+      "evidence": [
+        "evidence/claims/c5/raw_run_c6b3d274.json",
+        "evidence/claims/c5/claim_contract.json",
+        "repro/src/c5_mechanism.py"
+      ],
+      "boundary": "Medium confidence because official Torch training is replaced by a deterministic clean-room optimizer."
+    },
+    {
+      "id": "C6",
+      "paper_claim": "Optimal-transport dual potentials are generalized convex and twist inversion recovers the map.",
+      "status": "VERIFIED_SCOPED",
+      "possible_points": 2,
+      "source_anchor": "Optimal-transport characterization",
+      "production_path": [
+        "repro/src/c6_ot.py checks five symbolic dual schemas and 112 exact fraction cases",
+        "Nonquadratic twist maps are inverted in dimensions 2, 4, and 8",
+        "The non-twist control loses uniqueness as intended",
+        "evidence/claims/c6/raw_run_f5de8621.json records errors and controls"
+      ],
+      "evidence": [
+        "evidence/claims/c6/raw_run_f5de8621.json",
+        "evidence/claims/c6/claim_contract.json",
+        "repro/src/c6_ot.py"
+      ],
+      "boundary": "Registered symbolic dual and finite-dimensional twist-map checks."
+    }
+  ]
+}

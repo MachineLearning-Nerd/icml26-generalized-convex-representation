@@ -20,6 +20,14 @@ This repository is an independent, claim-by-claim reproduction audit for
 Gradients](https://arxiv.org/abs/2509.04477). It is part of
 MachineLearning-Nerd’s ICML 2026 reproduction collection.
 
+The standardized dossier is available in
+[STATUS.md](STATUS.md), [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md),
+[SOURCE_AUDIT.md](SOURCE_AUDIT.md), [ENVIRONMENT.md](ENVIRONMENT.md),
+[REPORT.md](REPORT.md), [CITATION.cff](CITATION.cff),
+[AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md), [claims.json](claims.json),
+[reproduction_verdicts.json](reproduction_verdicts.json), and
+[verify_final.py](verify_final.py).
+
 The paper proposes a differentiable layer with a convex parameter space and
 studies whether generalized convex functions and their gradients admit finite
 universal representations. It also applies the parameterization to optimal

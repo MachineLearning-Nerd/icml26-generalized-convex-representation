@@ -1,0 +1,51 @@
+{
+  "paper": "2509.04477",
+  "repository": "MachineLearning-Nerd/icml26-generalized-convex-representation",
+  "overall_status": "PARTIAL_C1_C5_C6_VERIFIED_C2_BLOCKED_C3_C4_FALSIFIED_HISTORICAL_SCORE_5_OF_12_NO_CURRENT_SCORE",
+  "claims": {
+    "C1": {
+      "status": "VERIFIED_SCOPED",
+      "raw_status": "VERIFIED",
+      "evidence": "evidence/claims/c1/raw_run_c8bc7870.json"
+    },
+    "C2": {
+      "status": "BLOCKED",
+      "raw_status": "BLOCKED",
+      "evidence": "evidence/claims/c2/raw_run_0f46ec76.json"
+    },
+    "C3": {
+      "status": "FALSIFIED_SCOPED",
+      "raw_status": "FALSIFIED",
+      "evidence": "evidence/claims/c3/raw_run_b7e56a29.json"
+    },
+    "C4": {
+      "status": "FALSIFIED_SCOPED",
+      "raw_status": "FALSIFIED",
+      "evidence": "evidence/claims/c4/raw_run_3142314a.json"
+    },
+    "C5": {
+      "status": "VERIFIED_SCOPED",
+      "raw_status": "VERIFIED",
+      "evidence": "evidence/claims/c5/raw_run_c6b3d274.json"
+    },
+    "C6": {
+      "status": "VERIFIED_SCOPED",
+      "raw_status": "VERIFIED",
+      "evidence": "evidence/claims/c6/raw_run_f5de8621.json"
+    }
+  },
+  "historical_evaluation": {
+    "space": "DineshAI/63o9EmYHXt",
+    "score": "5/12",
+    "current_score_claim": false
+  },
+  "publication": {
+    "tests_passed": true,
+    "publication_gate_passed": true,
+    "publication_allowed": false,
+    "author_endorsement_claimed": false,
+    "forecast_range": "7-10/12",
+    "best_supported_points": 10,
+    "reason": "This is a claim-level evidence package, not a new live judge submission or author-endorsed implementation."
+  }
+}

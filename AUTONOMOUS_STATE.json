@@ -1,0 +1,30 @@
+{
+  "paper": "2509.04477",
+  "title": "Universal Representation of Generalized Convex Functions and their Gradients",
+  "repository": "MachineLearning-Nerd/icml26-generalized-convex-representation",
+  "old_repository_slug": "icml26-repro-63o9EmYHXt-universal-representation-of-generalized-convex-functions-and-their-gradients",
+  "overall_status": "PARTIAL_C1_C5_C6_VERIFIED_C2_BLOCKED_C3_C4_FALSIFIED_HISTORICAL_SCORE_5_OF_12_NO_CURRENT_SCORE",
+  "current_score_claim": false,
+  "publication_allowed": false,
+  "author_endorsement_claimed": false,
+  "canonical_identity": {
+    "name": "MachineLearning-Nerd",
+    "email": "MachineLearning-Nerd@users.noreply.github.com"
+  },
+  "normalization": {
+    "pre_normalization_main": "054d82ce7810d5fc6c967d2e219a98049ff3f6db",
+    "recovery_bundle_sha256": "3058b61167d2b3306ac8f580e11cbf0e8a02b6b19a6b713ec2231ca9119a5669",
+    "published_branch_count": 9,
+    "expected_reachable_commit_count_after_dossier": 26
+  },
+  "historical_evaluation": {
+    "space": "DineshAI/63o9EmYHXt",
+    "score": "5/12",
+    "is_current": false
+  },
+  "evidence_forecast": {
+    "range": "7-10/12",
+    "best_supported_points": 10,
+    "is_live_judge_result": false
+  }
+}

@@ -38,7 +38,7 @@ The normalized repository must satisfy all of the following:
 1. The published default branch is main.
 2. Every published branch uses one of the clean names in the mapping above.
 3. Every commit author and committer is
-   MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>.
+   MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>.
 4. The fixed command remains uv run --frozen python repro/src/verify.py.
 5. C2 remains BLOCKED until its gradient topology is specified or a valid
    theorem-level counterexample is found.

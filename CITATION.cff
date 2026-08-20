@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Universal Representation of Generalized Convex Functions and their Gradients: Independent Reproduction Audit"
+message: "If this audit or its proof and numerical routes are useful, please cite the paper and this repository."
+type: software
+authors:
+  - family-names: Nehzati
+    given-names: Moeen
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-generalized-convex-representation"
+url: "https://arxiv.org/abs/2509.04477"
+doi: "10.48550/arXiv.2509.04477"
+license: "MIT"
+version: "audit-2026-08-20"
+date-released: "2026-08-20"
